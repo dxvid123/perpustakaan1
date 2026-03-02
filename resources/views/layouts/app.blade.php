@@ -11,7 +11,17 @@
 
 <nav class="navbar navbar-dark bg-dark">
     <div class="container">
-        <span class="navbar-brand">CRUD Book Laravel</span>
+        <a href="{{ route('books.index') }}" class="navbar-brand">
+            CRUD Book Laravel
+        </a>
+
+        <div>
+            <a href="{{ route('books.index') }}" 
+               class="btn btn-light btn-sm">Books</a>
+
+            <a href="{{ route('categories.index') }}" 
+               class="btn btn-warning btn-sm">Categories</a>
+        </div>
     </div>
 </nav>
 
